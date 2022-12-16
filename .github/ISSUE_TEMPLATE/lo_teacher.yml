@@ -8,11 +8,21 @@ body:
     attributes:
       value: |
         Thanks for taking the time to raise this question!
+  - type: input
+    id: contact
+    attributes:
+      label: Brief summary about your teaching context
+      description: >-
+        Can you give details on the context where you use Learn-OCaml?
+      placeholder: >-
+        e.g. name of your institute, teaching unit
+    validations:
+      required: false
   - type: textarea
     id: problem
     attributes:
       label: 'Question?'
-      description: 'As a teacher/supervisor:'
+      description: 'As a Learn-OCaml teacher/supervisor:'
       placeholder: 'I would like...'
     validations:
       required: true
