@@ -1,0 +1,23 @@
+name: Meta
+description: 'Ask a misc. or meta question about this questions repository'
+title: 'Meta: '
+labels: ['meta']
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to give meta-feedback!
+  - type: textarea
+    id: problem
+    attributes:
+      label: 'Problem?'
+      description: 'What problem did you notice?'
+      placeholder: 'Details...'
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 'Solution?'
+      description: 'What solution would you like to suggest to address this problem?'

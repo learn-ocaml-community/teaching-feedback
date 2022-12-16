@@ -1,0 +1,7 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 'Learn-OCaml Bug report or Feature request'
+    url: https://github.com/ocaml-sf/learn-ocaml/issues/new/choose
+    about: >-
+      This is the best place to report bugs or suggest features for Learn-OCaml.

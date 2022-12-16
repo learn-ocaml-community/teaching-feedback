@@ -1,0 +1,47 @@
+name: Learner
+description: 'Ask a question as a Learn-OCaml learner/user'
+title: 'Learner: '
+labels: ['learner', 'question']
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to raise this question!
+  - type: input
+    id: contact
+    attributes:
+      label: Brief summary about your teaching context
+      description: >-
+        Can you give details on the context where you use Learn-OCaml?
+      placeholder: >-
+        e.g. name of your institute, teaching unit
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: 'Question?'
+      description: 'As a Learn-OCaml user:'
+      placeholder: 'I am wondering...'
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: 'What OS do you use to learn ocaml?'
+      multiple: true
+      options:
+        - GNU/Linux
+        - MacOS
+        - Windows
+        - irrelevant for the question
+  - type: textarea
+    id: code
+    attributes:
+      label: 'Code (if need be)'
+      description: |-
+        Please copy and paste any relevant code. This will be automatically formatted into code, so no need for backticks.
+        
+        Note: this repository is public, so your question will be too.
+      render: shell

@@ -1,0 +1,27 @@
+name: Teacher
+description: 'Ask a question as a Learn-OCaml teacher/supervisor'
+title: 'Teacher: '
+labels: ['teacher', 'question']
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to raise this question!
+  - type: textarea
+    id: problem
+    attributes:
+      label: 'Question?'
+      description: 'As a teacher/supervisor:'
+      placeholder: 'I would like...'
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: 'Relevant code'
+      description: |-
+        Please copy and paste any relevant code. This will be automatically formatted into code, so no need for backticks.
+        
+        Note: this repository is public, so your question will be too.
+      render: shell
